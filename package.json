@@ -1,0 +1,217 @@
+{
+	"name": "sldb-vscode",
+	"displayName": "SymLevel C++ Debugger",
+	"version": "0.13.1",
+	"publisher": "symlevel",
+	"description": "SymLevel C++ Debugger for VS Code.",
+	"author": {
+		"name": "SymLevel",
+		"email": "support@symlevel.com"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"keywords": [
+		"multi-root ready"
+	],
+	"engines": {
+		"vscode": "^1.30.0-insider",
+		"node": "^8.9.3"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Debuggers",
+		"Snippets"
+	],
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/symlevel/sldb-vscode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/symlevel/sldb-vscode/issues"
+	},
+	"scripts": {
+		"prepublish": "tsc -p ./src",
+		"compile": "tsc -p ./src",
+		"tslint": "tslint ./src/**/*.ts",
+		"watch": "tsc -w -p ./src",
+		"test": "mocha -u tdd ./out/tests/",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"package": "vsce package",
+		"publish": "vsce publish"
+	},
+	"dependencies": {
+		"await-notify": "1.0.1",
+		"vscode-debugadapter": "1.33.0"
+	},
+	"devDependencies": {
+		"@types/node": "8.9.3",
+		"@types/mocha": "5.2.5",
+		"typescript": "3.1.6",
+		"mocha": "5.2.0",
+		"vscode": "1.1.21",
+		"vscode-debugadapter-testsupport": "1.33.0",
+		"tslint": "5.11.0",
+		"vsce": "1.53.2"
+	},
+	"main": "./out/extension",
+	"activationEvents": [
+		"onDebug"
+	],
+	"contributes": {
+		"debuggers": [
+			{
+				"type": "sldb",
+				"label": "sldb",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"c",
+						"cpp"
+					]
+				},
+				"args": [
+					"--log-level=trace"
+				],
+				"configurationAttributes": {
+					"launch": {
+						"required": [
+							"program"
+						],
+						"properties": {
+							"program": {
+								"type": "string",
+								"description": "Absolute path to a text file.",
+								"default": ""
+							},
+							"args": {
+								"type": "array",
+								"description": "Command line arguments.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"type": {
+								"type": "string",
+								"description": "The type of the engine. Must be \"sldb\".",
+								"default": "sldb"
+							},
+							"cwd": {
+								"type": "string",
+								"description": "The working directory.",
+								"default": "."
+							},
+							"avoidNodebug": {
+								"type": "boolean",
+								"description": "Avoid functions with no debug info.",
+								"default": true
+							},
+							"avoidStdFunctions": {
+								"type": "boolean",
+								"description": "Avoid functions from the C++ Standard library",
+								"default": true
+							},
+							"stepThroughStdFunctions": {
+								"type": "boolean",
+								"description": "Step through C++ Standard library functional objects code when performing step into.",
+								"default": true
+							},
+							"avoidRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to much functions to avoid.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"stepThroughRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to much functions to step through when performing step into.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							}
+						}
+					},
+					"attach": {
+						"required": [
+							"pid"
+						],
+						"properties": {
+							"type": {
+								"type": "string",
+								"description": "The type of the engine. Must be \"sldb\".",
+								"default": "sldb"
+							},
+							"pid": {
+								"type": "number",
+								"description": "ID of process to attach to."
+							},
+							"avoidNodebug": {
+								"type": "boolean",
+								"description": "Avoid functions with no debug info.",
+								"default": true
+							},
+							"avoidStdFunctions": {
+								"type": "boolean",
+								"description": "Avoid functions from the C++ Standard library",
+								"default": true
+							},
+							"stepThroughStdFunctions": {
+								"type": "boolean",
+								"description": "Step through C++ Standard library functional objects code when performing step into.",
+								"default": true
+							},
+							"avoidRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to much functions to avoid.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"stepThroughRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to much functions to step through when performing step into.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							}
+						}
+					}
+				},
+				"initialConfigurations": [
+					{
+						"type": "sldb",
+						"request": "launch",
+						"name": "(sldb) Launch",
+						"program": "enter program name here, for example ${workspaceFolder}/my_program"
+					}
+				],
+				"configurationSnippets": [
+					{
+						"label": "C/C++ (sldb) Launch",
+						"description": "A new configuration for debugging C++ with sldb debugger",
+						"body": {
+							"type": "sldb",
+							"request": "launch",
+							"name": "(sdlb) Launch",
+							"program": "enter program name here, for example ${workspaceFolder}/my_program"
+						}
+					},
+					{
+						"label": "C/C++ (sldb) Attach",
+						"description": "A new configuration for debugging C++ with sldb debugger",
+						"body": {
+							"type": "sldb",
+							"request": "attach",
+							"name": "(sdlb) Attach",
+							"pid": "replace this text field with process ID integer value"
+						}
+					}
+				]
+			}
+		]
+	}
+}
