@@ -20,8 +20,8 @@ class SldbDebugAdapterDescriptorFactory implements vscode.DebugAdapterDescriptor
 	createDebugAdapterDescriptor(session: vscode.DebugSession,
 		                         executable: vscode.DebugAdapterExecutable | undefined): vscode.ProviderResult<vscode.DebugAdapterDescriptor> {
 
-		let command: string = path.join(this.context.extensionPath, "bin");
-		command = path.join(command, os.platform());
+		let command: string = path.join(this.context.extensionPath, os.platform());
+		command = path.join(command, "bin");
 		command = path.join(command, "sldb-dap-server")
 		if (os.platform() === "win32") {
 			command = command + ".exe";
