@@ -1,7 +1,7 @@
 {
 	"name": "sldb-vscode",
 	"displayName": "SymLevel C++ Debugger",
-	"version": "0.16.0",
+	"version": "0.17.0",
 	"publisher": "symlevel",
 	"description": "SymLevel C++ Debugger for VS Code.",
 	"author": {
