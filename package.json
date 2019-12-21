@@ -3,7 +3,7 @@
 	"displayName": "SymLevel C++ Debugger",
 	"version": "0.17.0",
 	"publisher": "symlevel",
-	"description": "SymLevel C++ Debugger for VS Code.",
+	"description": "C++ Debugger for VS Code.",
 	"author": {
 		"name": "SymLevel",
 		"email": "support@symlevel.com"

@@ -1,6 +1,9 @@
 # SymLevel C++ Debugger
 
-SymLevel C++ Debugger - is a debugger extension for VS Code. It implements many advanced features designed for debugging programs that extensively use modern C++ features like templates and functional programming.
+SymLevel C++ Debugger is a debugger extension for VS Code. It implements many advanced features designed for debugging programs that extensively use modern C++ features like templates and functional programming.
+
+Visit [http://symlevel.com/debugger](http://symlevel.com/debugger) for more details.
+
 
 ## Features
 ### Advanced stepping functions
@@ -21,7 +24,7 @@ SymLevel C++ Debugger - is a debugger extension for VS Code. It implements many 
 * Supported platforms: Linux, Windows, Macos
 * Supported compilers: gcc, clang with libstdc++
 
-See [http://symlevel.com/debugger/features-vscode](http://symlevel.com/debugger/features-vscode) for more details.
+See [http://symlevel.com/debugger/features-vscode](http://symlevel.com/debugger/features-vscode) for detailed features description.
 
 ## Example configuration
 The following ```launch.json``` example adds debug configuration in VS Code
