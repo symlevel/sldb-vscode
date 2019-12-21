@@ -10,7 +10,7 @@
 	},
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"keywords": [
-		"multi-root ready"
+		"C++", "debugger"
 	],
 	"engines": {
 		"vscode": "^1.30.0-insider",
@@ -79,7 +79,7 @@
 						"properties": {
 							"program": {
 								"type": "string",
-								"description": "Absolute path to a text file.",
+								"description": "Absolute path to an executable.",
 								"default": ""
 							},
 							"args": {
@@ -117,7 +117,7 @@
 							},
 							"avoidRegexList": {
 								"type": "array",
-								"description": "List of regular expressions to much functions to avoid.",
+								"description": "List of regular expressions to match functions to avoid.",
 								"items": {
 									"type": "string"
 								},
@@ -125,7 +125,7 @@
 							},
 							"stepThroughRegexList": {
 								"type": "array",
-								"description": "List of regular expressions to much functions to step through when performing step into.",
+								"description": "List of regular expressions to match functions to step through when performing step into.",
 								"items": {
 									"type": "string"
 								},
