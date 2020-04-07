@@ -10,7 +10,8 @@
 	},
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"keywords": [
-		"C++", "debugger"
+		"C++",
+		"debugger"
 	],
 	"engines": {
 		"vscode": "^1.30.0-insider",
@@ -115,6 +116,11 @@
 								"description": "Step through C++ Standard library functional objects code when performing step into.",
 								"default": true
 							},
+							"markStdFunctions": {
+								"type": "boolean",
+								"description": "Mark C++ Standard library functional objects frames as subtle.",
+								"default": true
+							},
 							"avoidRegexList": {
 								"type": "array",
 								"description": "List of regular expressions to match functions to avoid.",
@@ -126,6 +132,14 @@
 							"stepThroughRegexList": {
 								"type": "array",
 								"description": "List of regular expressions to match functions to step through when performing step into.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"markRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to match functions to be marked as subtle.",
 								"items": {
 									"type": "string"
 								},
