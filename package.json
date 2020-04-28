@@ -144,7 +144,27 @@
 									"type": "string"
 								},
 								"default": []
-							}
+							},
+                            "environment": {
+                                "type": "array",
+                                "description": "Environment variables in form of array of {\"name\": \"\", \"value\": \"\"} objects",
+                                "items": {
+                                    "type": "object",
+                                    "default": {"name": "", "value": ""},
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "default": [
+                                    {"name": "", "value": ""}
+                                ]
+                            },
+
 						}
 					},
 					"attach": {
