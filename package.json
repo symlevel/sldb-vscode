@@ -1,7 +1,7 @@
 {
 	"name": "sldb-vscode",
 	"displayName": "SymLevel C++ Debugger",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "symlevel",
 	"description": "C++ Debugger for VS Code.",
 	"author": {
@@ -139,7 +139,7 @@
 							},
 							"markRegexList": {
 								"type": "array",
-								"description": "List of regular expressions to match functions to be marked as subtle.",
+								"description": "List of regular expressions to match functions to be marked as subtle in call stack.",
 								"items": {
 									"type": "string"
 								},
@@ -163,7 +163,7 @@
                                 "default": [
                                     {"name": "", "value": ""}
                                 ]
-                            },
+                            }
 
 						}
 					},
@@ -196,6 +196,11 @@
 								"description": "Step through C++ Standard library functional objects code when performing step into.",
 								"default": true
 							},
+							"markStdFunctions": {
+								"type": "boolean",
+								"description": "Mark C++ Standard library functional objects frames as subtle.",
+								"default": true
+							},
 							"avoidRegexList": {
 								"type": "array",
 								"description": "List of regular expressions to much functions to avoid.",
@@ -207,6 +212,14 @@
 							"stepThroughRegexList": {
 								"type": "array",
 								"description": "List of regular expressions to much functions to step through when performing step into.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"markRegexList": {
+								"type": "array",
+								"description": "List of regular expressions to match functions to be marked as subtle in call stack.",
 								"items": {
 									"type": "string"
 								},
