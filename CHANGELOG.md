@@ -1,6 +1,18 @@
 # SymLevel C++ Debugger Change Log
 
 
+## Version 1.2.0
+
+### New features
+- LLVM libc++ Standard library support
+- Improved resolving of dynamic value types for clang compiler
+
+### Bug fixes
+- Fixed bugs in displaying values of libstdc++ associative containers
+- Fixed displaying of long stack traces
+- Fixed displaying of pointer to member function values for recent gcc/clang compilers
+
+
 ## Version 1.1.1
 
 ### Bug fixes

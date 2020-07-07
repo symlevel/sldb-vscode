@@ -18,7 +18,8 @@ Visit [http://symlevel.com/debugger](http://symlevel.com/debugger) for more deta
 * Display values of lambda expressions
 * Display values of the standard functional objects
 
-### Full support of the standard libstdc++ library
+### Full support of the standard library
+* Support of both libstdc++ and libc++ libraries
 * STL containers and iterators
 * Functional objects
 * Utility types: std::any, std::variant, etc
