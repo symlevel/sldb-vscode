@@ -224,6 +224,11 @@
 									"type": "string"
 								},
 								"default": []
+							},
+							"launchInTerminal": {
+								"type": "boolean",
+								"description": "Launch debuggee in integrated terminal.",
+								"default": true
 							}
 						}
 					}
