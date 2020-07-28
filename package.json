@@ -229,6 +229,26 @@
 								"type": "boolean",
 								"description": "Launch debuggee in integrated terminal.",
 								"default": true
+							},
+							"platform": {
+								"type": "string",
+								"description": "Name of platform to connect.",
+								"enum": [
+									"host",
+									"remote-freebsd",
+									"remote-linux",
+									"remote-netbsd",
+									"remote-openbsd",
+									"remote-windows",
+									"remote-android",
+									"remote-ios",
+									"remote-macosx",
+									"remote-gdb-server"
+								]
+							},
+							"platformUrl": {
+								"type": "string",
+								"description": "URL of platform to connect."
 							}
 						}
 					}
