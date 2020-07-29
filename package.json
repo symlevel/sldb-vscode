@@ -233,6 +233,7 @@
 							"platform": {
 								"type": "string",
 								"description": "Name of platform to connect.",
+								"default": "host",
 								"enum": [
 									"host",
 									"remote-freebsd",
@@ -249,6 +250,14 @@
 							"platformUrl": {
 								"type": "string",
 								"description": "URL of platform to connect."
+							},
+							"initCommands": {
+								"type": "array",
+								"description": "List of debugger initialization commands.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
 							}
 						}
 					}
