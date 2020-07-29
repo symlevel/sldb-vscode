@@ -258,6 +258,14 @@
 									"type": "string"
 								},
 								"default": []
+							},
+							"execSearchPaths": {
+								"type": "array",
+								"description": "List of local paths to search for loaded executables and shared libraries.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
 							}
 						}
 					}
