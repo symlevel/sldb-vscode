@@ -170,6 +170,7 @@
 								"default": "host",
 								"enum": [
 									"host",
+                                    "android",
 									"remote-freebsd",
 									"remote-linux",
 									"remote-netbsd",
@@ -290,6 +291,7 @@
 								"default": "host",
 								"enum": [
 									"host",
+                                    "android",
 									"remote-freebsd",
 									"remote-linux",
 									"remote-netbsd",
