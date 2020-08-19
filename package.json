@@ -69,9 +69,6 @@
 						"cpp"
 					]
 				},
-				"args": [
-					"--log-level=trace"
-				],
 				"configurationAttributes": {
 					"launch": {
 						"required": [
@@ -217,6 +214,22 @@
 								"type": "string",
 								"description": "Optional path to JDB to use with the android platform.",
 								"default": ""
+							},
+							"debugServerExecutable": {
+								"type": "string",
+								"description": "Path to Debug Adapter Protocol server executabe. Used for debugging sldb.",
+								"default": ""
+							},
+							"logLevel": {
+								"type": "string",
+								"description": "Logging level for Debug Adapter Protocol server executabe. Used for debugging sldb.",
+								"enum": [
+									"info",
+                                    "error",
+									"warning",
+									"debug",
+									"trace"
+								]
 							}
 						}
 					},
@@ -338,6 +351,22 @@
 								"type": "string",
 								"description": "Optional path to JDB to use with the android platform.",
 								"default": ""
+							},
+							"debugServerExecutable": {
+								"type": "string",
+								"description": "Path to Debug Adapter Protocol server executabe. Used for debugging sldb.",
+								"default": ""
+							},
+							"logLevel": {
+								"type": "string",
+								"description": "Logging level for Debug Adapter Protocol server executabe. Used for debugging sldb.",
+								"enum": [
+									"info",
+                                    "error",
+									"warning",
+									"debug",
+									"trace"
+								]
 							}
 						}
 					}

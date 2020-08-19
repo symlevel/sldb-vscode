@@ -20,20 +20,41 @@ class SldbDebugAdapterDescriptorFactory implements vscode.DebugAdapterDescriptor
 	createDebugAdapterDescriptor(session: vscode.DebugSession,
 		                         executable: vscode.DebugAdapterExecutable | undefined): vscode.ProviderResult<vscode.DebugAdapterDescriptor> {
 
-		let command: string = path.join(this.context.extensionPath, os.platform());
-		command = path.join(command, "bin");
-		command = path.join(command, "sldb-dap-server")
-		if (os.platform() === "win32") {
-			command = command + ".exe";
+		let command: string = ""
+		if ("debugServerExecutable" in session.configuration) {
+			command = session.configuration.debugServerExecutable
+		} else {
+			command = path.join(this.context.extensionPath, os.platform());
+			command = path.join(command, "bin");
+			command = path.join(command, "sldb-dap-server")
+			if (os.platform() === "win32") {
+				command = command + ".exe";
+			}
 		}
 
-		return new vscode.DebugAdapterExecutable(command, []);
+		let args: string[] = []
+		if ("logLevel" in session.configuration) {
+			args = ["--log-level=" + session.configuration.logLevel];
+		}
+
+		return new vscode.DebugAdapterExecutable(command, args);
     }
 }
 
 
 export function activate(context: vscode.ExtensionContext) {
 	vscode.debug.registerDebugAdapterDescriptorFactory("sldb", new SldbDebugAdapterDescriptorFactory(context));
+
+	// vscode.debug.registerDebugAdapterTrackerFactory('sldb', {
+	// 	createDebugAdapterTracker(session: vscode.DebugSession) {
+	// 	  	return {
+	// 			onWillReceiveMessage: m =>
+	// 				console.log(`> ${JSON.stringify(m, undefined, 2)}`),
+	// 			onDidSendMessage: m =>
+	// 				console.log(`< ${JSON.stringify(m, undefined, 2)}`)
+	// 	  	};
+	// 	}
+	// });
 }
 
 
