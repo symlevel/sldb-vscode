@@ -26,6 +26,7 @@ Visit [http://symlevel.com/debugger](http://symlevel.com/debugger) for more deta
 
 ### Cross platform
 * Supported platforms: Linux, Windows, Macos
+* Android debugging support
 * Supported compilers: gcc, clang with libstdc++
 
 See [http://symlevel.com/debugger/features-vscode](http://symlevel.com/debugger/features-vscode) for detailed features description.
