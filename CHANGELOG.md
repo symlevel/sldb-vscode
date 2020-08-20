@@ -10,8 +10,9 @@
 
 ### Bug fixes
 - Fixed small bug in displaying result of std::bind
+- Fixed critical bug causing random hangs
 
-Release date: 08/16/2020
+Release date: 08/21/2020
 
 
 ## Version 1.2.0
@@ -42,7 +43,7 @@ Release date: 06/01/2020
 
 ### New features
 - Support of environment variables in launch parameters
-- Mark frames of Standard functional objects as subtle in call stack 
+- Mark frames of Standard functional objects as subtle in call stack
 - Launching in VS Code terminal on Windows
 - Launching without debugging on Windows
 
