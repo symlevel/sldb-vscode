@@ -1,5 +1,15 @@
 # SymLevel C++ Debugger Change Log
 
+## Version 1.4.0
+
+### New features
+- Auto detection of Android SDK/NDK paths
+
+### Bug fixes
+- Small bug fixes in displaying variables
+
+Release date: 11/02/2020
+
 ## Version 1.3.0
 
 ### New features
