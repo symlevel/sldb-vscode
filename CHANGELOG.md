@@ -8,7 +8,7 @@
 ### Bug fixes
 - Small bug fixes in displaying variables
 
-Release date: 11/02/2020
+Release date: 11/24/2020
 
 ## Version 1.3.0
 
