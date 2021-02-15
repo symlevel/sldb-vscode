@@ -11,7 +11,8 @@
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"keywords": [
 		"C++",
-		"debugger"
+		"debugger",
+		"debug"
 	],
 	"engines": {
 		"vscode": "^1.30.0-insider",
