@@ -5,7 +5,7 @@
 
 ### Bug fixes
 - Fixed displaying value of `std::unique_ptr` from new libstdc++ version
-- Fixed displaying of long stack traces
+- Fixed displaying long stack traces
 - Minor bug fixes and improvements
 
 Release date: 03/01/2021
