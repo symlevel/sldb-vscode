@@ -8,7 +8,7 @@
 - Fixed displaying long stack traces
 - Minor bug fixes and improvements
 
-Release date: 03/01/2021
+Release date: 03/08/2021
 
 
 ## Version 1.4.0
