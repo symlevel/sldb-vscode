@@ -231,6 +231,26 @@
 									"debug",
 									"trace"
 								]
+							},
+							"displayRawData": {
+								"type": "boolean",
+								"description": "Display [Raw Data] field containing raw unformatted fields of formatted value.",
+								"default": false
+							},
+							"displayHex": {
+								"type": "boolean",
+								"description": "Display integer values in hexadecimal format.",
+								"default": false
+							},
+							"displayMinHexSize": {
+								"type": "integer",
+								"description": "Minimum number of bytes displayed in hexadecimal format.",
+								"default": 4
+							},
+							"displayPointerAddresses": {
+								"type": "boolean",
+								"description": "Display memory addresses of pointer values.",
+								"default": true
 							}
 						}
 					},
@@ -368,6 +388,26 @@
 									"debug",
 									"trace"
 								]
+							},
+							"displayRawData": {
+								"type": "boolean",
+								"description": "Display [Raw Data] field containing raw unformatted fields of formatted value.",
+								"default": false
+							},
+							"displayHex": {
+								"type": "boolean",
+								"description": "Display integer values in hexadecimal format.",
+								"default": false
+							},
+							"displayMinHexSize": {
+								"type": "integer",
+								"description": "Minimum number of bytes displayed in hexadecimal format.",
+								"default": 4
+							},
+							"displayPointerAddresses": {
+								"type": "boolean",
+								"description": "Display memory addresses of pointer values.",
+								"default": true
 							}
 						}
 					}
