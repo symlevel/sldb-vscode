@@ -251,6 +251,11 @@
 								"type": "boolean",
 								"description": "Display memory addresses of pointer values.",
 								"default": true
+							},
+							"displayStructAddresses": {
+								"type": "boolean",
+								"description": "Display memory addresses of struct/class/union values.",
+								"default": false
 							}
 						}
 					},
@@ -408,6 +413,11 @@
 								"type": "boolean",
 								"description": "Display memory addresses of pointer values.",
 								"default": true
+							},
+							"displayStructAddresses": {
+								"type": "boolean",
+								"description": "Display memory addresses of struct/class/union values.",
+								"default": false
 							}
 						}
 					}
