@@ -232,6 +232,11 @@
 									"trace"
 								]
 							},
+							"logToOutput": {
+								"type": "boolean",
+								"description": "Send debugger log to output.",
+								"default": false
+							},
 							"displayRawData": {
 								"type": "boolean",
 								"description": "Display [Raw Data] field containing raw unformatted fields of formatted value.",
@@ -393,6 +398,11 @@
 									"debug",
 									"trace"
 								]
+							},
+							"logToOutput": {
+								"type": "boolean",
+								"description": "Send Debug Adapter Protocol server executabe log to output.",
+								"default": false
 							},
 							"displayRawData": {
 								"type": "boolean",
