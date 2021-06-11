@@ -15,8 +15,7 @@
 		"debug"
 	],
 	"engines": {
-		"vscode": "^1.30.0-insider",
-		"node": "^8.9.3"
+		"vscode": "^1.30.0"
 	},
 	"icon": "images/icon.png",
 	"categories": [
@@ -37,7 +36,6 @@
 		"tslint": "tslint ./src/**/*.ts",
 		"watch": "tsc -w -p ./src",
 		"test": "mocha -u tdd ./out/tests/",
-		"postinstall": "node ./node_modules/vscode/bin/install",
 		"package": "vsce package",
 		"publish": "vsce publish"
 	},
@@ -48,6 +46,7 @@
 	"devDependencies": {
 		"@types/node": "8.9.3",
 		"@types/mocha": "5.2.5",
+		"@types/vscode": "1.30.0",
 		"typescript": "3.1.6",
 		"mocha": "5.2.0",
 		"vscode": "1.1.21",
@@ -143,24 +142,30 @@
 								},
 								"default": []
 							},
-                            "environment": {
-                                "type": "array",
-                                "description": "Environment variables in form of array of {\"name\": \"\", \"value\": \"\"} objects",
-                                "items": {
-                                    "type": "object",
-                                    "default": {"name": "", "value": ""},
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        },
-                                        "value": {
-                                            "type": "string"
-                                        }
-                                    }
-                                },
-                                "default": [
-                                    {"name": "", "value": ""}
-                                ]
+							"environment": {
+								"type": "array",
+								"description": "Environment variables in form of array of {\"name\": \"\", \"value\": \"\"} objects",
+								"items": {
+									"type": "object",
+									"default": {
+										"name": "",
+										"value": ""
+									},
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"value": {
+											"type": "string"
+										}
+									}
+								},
+								"default": [
+									{
+										"name": "",
+										"value": ""
+									}
+								]
 							},
 							"platform": {
 								"type": "string",
@@ -168,7 +173,7 @@
 								"default": "host",
 								"enum": [
 									"host",
-                                    "android",
+									"android",
 									"remote-freebsd",
 									"remote-linux",
 									"remote-netbsd",
@@ -226,7 +231,7 @@
 								"description": "Logging level for Debug Adapter Protocol server executabe. Used for debugging sldb.",
 								"enum": [
 									"info",
-                                    "error",
+									"error",
 									"warning",
 									"debug",
 									"trace"
@@ -335,7 +340,7 @@
 								"default": "host",
 								"enum": [
 									"host",
-                                    "android",
+									"android",
 									"remote-freebsd",
 									"remote-linux",
 									"remote-netbsd",
@@ -393,7 +398,7 @@
 								"description": "Logging level for Debug Adapter Protocol server executabe. Used for debugging sldb.",
 								"enum": [
 									"info",
-                                    "error",
+									"error",
 									"warning",
 									"debug",
 									"trace"
