@@ -1,5 +1,23 @@
 # SymLevel C++ Debugger Change Log
 
+## Version 1.6.0
+
+### New features
+- Displaying values of pointers and addresses of structures
+- Launching without debugging on Android device or emulator
+- Displaying correct position in source code on assertion failures
+
+### Small improvements
+- Improved performance of formatting variable values
+- Added support of displaying debugger log in the output panel
+
+### Bug fixes
+- The debugger now correctly stops lldb-server on an Android device or emulator
+
+Release date: 06/21/2021
+
+Read more: [What's new in SymLevel C++ Debugger 1.6.0](https://symlevel.com/debugger/whatsnew/1.6.0)
+
 
 ## Version 1.5.0
 
