@@ -16,8 +16,6 @@
 
 Release date: 07/14/2021
 
-Read more: [What's new in SymLevel C++ Debugger 1.6.0](https://symlevel.com/debugger/whatsnew/1.6.0)
-
 
 ## Version 1.5.0
 
