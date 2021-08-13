@@ -25,10 +25,10 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/symlevel/sldb-vscode.git"
+		"url": "https://github.com/symlevel/sldb-project"
 	},
 	"bugs": {
-		"url": "https://github.com/symlevel/sldb-vscode/issues"
+		"url": "https://github.com/symlevel/sldb-project/issues"
 	},
 	"scripts": {
 		"prepublish": "tsc -p ./src",
