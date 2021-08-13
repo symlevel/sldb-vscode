@@ -7,6 +7,8 @@ SymLevel C++ Debugger is a debugger extension for VS Code. It implements many ad
 
 Visit [http://symlevel.com/debugger](http://symlevel.com/debugger) for more details.
 
+[What's new in SymLevel C++ Debugger](https://symlevel.com/debugger/whatsnew)
+
 
 ## Features
 ### Advanced stepping functions

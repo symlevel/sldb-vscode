@@ -1,5 +1,14 @@
 # SymLevel C++ Debugger Change Log
 
+## Version 1.6.1
+
+### Bug fixes
+
+- Fixed critical bug in compatibility with several Linux distros
+
+Release date: 08/14/2021
+
+
 ## Version 1.6.0
 
 ### New features
@@ -15,8 +24,6 @@
 - The debugger now correctly stops lldb-server on an Android device or emulator
 
 Release date: 07/14/2021
-
-Read more: [What's new in SymLevel C++ Debugger 1.6.0](https://symlevel.com/debugger/whatsnew/1.6.0)
 
 
 ## Version 1.5.0
