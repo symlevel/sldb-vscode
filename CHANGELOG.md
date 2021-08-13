@@ -1,5 +1,14 @@
 # SymLevel C++ Debugger Change Log
 
+## Version 1.6.1
+
+### Bug fixes
+
+- Fixed critical bug in compatibility with several Linux distros
+
+Release date: 08/14/2021
+
+
 ## Version 1.6.0
 
 ### New features
