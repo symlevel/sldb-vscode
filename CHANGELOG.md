@@ -1,5 +1,14 @@
 # SymLevel C++ Debugger Change Log
 
+## Version 1.6.2
+
+### Bug fixes
+
+- Fixed several bugs related to regular expressions
+
+Release date: 08/20/2021
+
+
 ## Version 1.6.1
 
 ### Bug fixes
