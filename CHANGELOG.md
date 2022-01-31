@@ -1,5 +1,25 @@
 # SymLevel C++ Debugger Change Log
 
+
+## Version 1.7.0
+
+### New features
+- Displaying values of the std::chrono types
+- Displaying values of match results of regular expressions
+
+### Small improvements
+- `step-through-regexp` setting in debugger terminal
+- DEB/RPM installers for Linux and DMG installer for Mac OS
+- Apple M1 architecture support for Mac OS
+
+### Bug fixes
+- Fixed bugs in displaying values of the `std::function` type and lambdas for new compilers
+- Fixed formatting of base clases
+- Fixed small bugs in Locals and Watch panels in the standalone debugger
+
+Release date: 02/02/2022
+
+
 ## Version 1.6.2
 
 ### Bug fixes
