@@ -4,7 +4,7 @@
 ## Version 1.7.0
 
 ### New features
-- Displaying values of the std::chrono types
+- Displaying values of the `std::chrono` types
 - Displaying values of match results of regular expressions
 
 ### Small improvements
