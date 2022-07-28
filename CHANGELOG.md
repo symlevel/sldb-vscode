@@ -16,8 +16,9 @@
 - Fixed bugs in displaying values of the `std::function` type and lambdas for new compilers
 - Fixed formatting of base clases
 - Fixed small bugs in Locals and Watch panels in the standalone debugger
+- Fixed critical bug in resolving dynamic class types
 
-Release date: 02/02/2022
+Release date: 07/29/2022
 
 
 ## Version 1.6.2
