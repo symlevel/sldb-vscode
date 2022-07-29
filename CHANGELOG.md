@@ -14,6 +14,7 @@
 
 ### Bug fixes
 - Fixed bugs in displaying values of the `std::function` type and lambdas for new compilers
+- FIxed bug in displaying values of the `std::string` type from libc++ on Mac OS
 - Fixed formatting of base clases
 - Fixed small bugs in Locals and Watch panels in the standalone debugger
 - Fixed critical bug in resolving dynamic class types
