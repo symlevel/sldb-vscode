@@ -19,7 +19,7 @@
 - Fixed small bugs in Locals and Watch panels in the standalone debugger
 - Fixed critical bug in resolving dynamic class types
 
-Release date: 08/01/2022
+Release date: 08/08/2022
 
 
 ## Version 1.6.2
